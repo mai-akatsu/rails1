@@ -1,0 +1,36 @@
+<%= render "shared/partial"%>
+
+
+<section class="all-show">
+
+ <h4><%= link_to "←  一覧に戻る", :users %></h4>
+ 
+ <div class="show-header">
+     <h4><%= @user.title%></h4>
+     <%= link_to "編集", :edit_user%>
+ </div>
+ 
+ <table class="show-table">
+   <tr>
+     <th>開始日</th>
+     <td><%= @user.starttime %></td>
+   </tr>
+   <tr>
+     <th>終了日</th>
+     <td><%= @user.endtime.to_s(:datetime_jp) %></td>
+   </tr>
+   <tr class="checkbox">
+     <th>終日</th>
+     <td> <% if @user.checkbox == true %>
+             ○
+          <% else @user.checkbox == false %>
+
+          <% end %></td>
+   </tr>
+   <tr>
+     <th>スケジュールメモ</th>
+     <td><%= @user.memo %></td>
+   </tr>
+ </table>
+ 
+ </section>

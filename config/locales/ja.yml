@@ -1,0 +1,9 @@
+ ja:
+   activerecord:
+     models:
+       user: ユーザー
+     attributes:
+       user:
+         starttime: 開始日
+         endtime: 終了日
+      
