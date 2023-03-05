@@ -13,7 +13,7 @@
  <table class="show-table">
    <tr>
      <th>開始日</th>
-     <td><%= @user.starttime %></td>
+     <td><%= @user.starttime.to_s(:datetime_jp) %></td>
    </tr>
    <tr>
      <th>終了日</th>
